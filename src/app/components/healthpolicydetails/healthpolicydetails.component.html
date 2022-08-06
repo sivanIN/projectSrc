@@ -1,0 +1,110 @@
+
+
+
+<body class="bg" >
+    
+
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f6dd53;">
+            <div class="container-fluid">
+                <img style="height: 30px; width: auto;" src="https://cdn-icons-png.flaticon.com/512/1518/1518738.png" alt="">
+                &nbsp;
+                &nbsp;
+                <a style="font-size: 30px;" class="navbar-brand" href="#">MNSS Insurance</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Health Policies</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Home Policies</a></li>
+                    </ul>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" >Logout</a>
+                  </li>
+    
+              
+                  
+                </ul>
+                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                  </button>
+                  <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModallogin">Login</button>  -->
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+
+
+
+    <div>
+        <div class="container middle">
+            <div class="row">
+                <div class="col-4">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/life-and-family-health-insurance-design-template-87e1d8aafd3e4fbaec9931fec0e10dc4_screen.jpg?ts=1598969387" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/corporate-insurance-instagram-post-advertisem-design-template-4d13eb643ca07f05c7cde3688ad277d6_screen.jpg?ts=1609366767" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/insurance-design-template-0da1c93a66eb51f5defb734438ca22d3_screen.jpg?ts=1616388388" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+                <div class="col-8">
+                    <div class="card">
+                        <div style="opacity: 1;" class="card-body">
+                          <h2 style="opacity: 1;" class="card-title text-center">{{policy.policyname}} Health Policy</h2>
+                          <br>
+                          <h4 class="card-subtitle mb-2 text-muted text-center">{{policy.policydescription}}</h4>
+                          <p class="card-text"></p>
+                          <br>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">{{policy.sumassurance}} Sum Insured will be available for persons. This is applicable only at the time of inception of this policy</li>
+                            <li class="list-group-item"> <b>{{policy.policyterm}}</b> year of coverage</li>
+                            <li class="list-group-item"> <b>Premium</b> will be {{policy.premium }}</li>
+                          </ul>
+                          <!-- <h5>Sumassurance = </h5>
+                          <h5>Policy term = </h5>
+                          <h5>Premium = </h5> -->
+                          <br>
+                          <button style="margin-left: 45%;" type="submit" class="btn btn-primary" (click)="saveUserpolicy()" >Buy Now</button>
+                          
+                        </div>
+                      </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+
+</body>

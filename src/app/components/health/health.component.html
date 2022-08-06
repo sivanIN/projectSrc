@@ -1,0 +1,212 @@
+
+<body>
+    <div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f6dd53;">
+        <div class="container-fluid">
+            <img style="height: 30px; width: auto;" src="https://cdn-icons-png.flaticon.com/512/1518/1518738.png" alt="">
+            &nbsp;
+            &nbsp;
+            <a style="font-size: 30px;" class="navbar-brand" href="#">MNSS Insurance</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Health Policies</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Home Policies</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="/mypolicy">My Policy</a>
+              </li>
+
+          
+              
+            </ul>
+
+            <li class="nav-item">
+              <a class="btn btn-primary"  aria-current="page" routerLink="/login">login</a>
+            </li>
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+              </button> -->
+              <!-- <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModallogin">Login</button>  -->
+            
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <div style="float:right;" class="row">
+        <div class="">
+            <div class="card">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 700px;">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/green-home-insurance-agent-instagram-post-tem-design-template-0bf89ce6ee45c56ab252421210d648b2_screen.jpg?ts=1643279728
+                        " class="d-block w-100" data-bs-interval="10000" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/green-home-insurance-agent-instagram-post-tem-design-template-0bf89ce6ee45c56ab252421210d648b2_screen.jpg?ts=1643279728
+                        " class="d-block w-100" data-bs-interval="10000"  alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/green-home-insurance-agent-instagram-post-tem-design-template-0bf89ce6ee45c56ab252421210d648b2_screen.jpg?ts=1643279728
+                        " class="d-block w-100" data-bs-interval="10000" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+        </div>
+
+    <div style="margin-top: 50px;" class="container">
+        <div class="row" >
+            <div class="col-8" *ngFor = "let policy of healthpolicy">
+                <div class="card">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/health-insurance%2Clife-insurance-design-template-3c2d5e7b7a284e144aec52254c1519b5_screen.mp4?ts=1620038081" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{policy.policyname}}</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button (click)="getpolicy(policy.policyid)" class="btn btn-primary">Go somewhere</button>
+                    </div>
+                  </div>
+            </div>
+            
+            
+                
+            </div>
+        </div>
+
+
+
+
+
+        <!-- signup modal
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Signup</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+
+                <form #us="ngForm"  (ngSubmit)="newUser()">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Email-Id:</label>
+                    <input type="email" class="form-control" id="exampleInputPassword1" name="email" [(ngModel)]="user.emailid">
+                  </div>
+                
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">password:</label>
+                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="password" [(ngModel)]="user.password">
+                  </div>
+            
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Mobile Number:</label>
+                    <input type="text" class="form-control" id="exampleInputmobileno"  name="mobilenumber" [(ngModel)]="user.mobilenumber">
+                  </div>
+            
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Address:</label>
+                    <input type="text" class="form-control" id="exampleInputaddress" name="address" [(ngModel)]="user.address">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Location:</label>
+                    <select class="form-select" aria-label="Default select example" name="location" [(ngModel)]="user.location">
+                        <option selected>Open this select menu</option>
+                        <option value="Urban">Urban</option>
+                        <option value="Rural">Rural</option>
+                     </select>
+                  </div>
+                  
+                  <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">DOB:</label>
+                      <input type="date" class="form-control" id="exampleInputdob" name="dob" [(ngModel)]="user.birthdate">
+                  </div>
+                  
+                  
+                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Create Account</button> -->
+                
+                <!-- </form>
+            
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>  -->
+
+
+  <!-- loginmodal -->
+
+
+  <!-- <div class="modal fade" id="exampleModallogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+
+                <form #loginForm="ngForm"   (ngSubmit)="userLogin(loginForm.value)" novalidate>
+                    
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" ngModel #email=ngModel required minlength="2" maxlength="30">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" name="password" ngModel #password=ngModel required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" >Login</button>
+                   
+                </form>
+          
+            </div>
+              
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+</body>

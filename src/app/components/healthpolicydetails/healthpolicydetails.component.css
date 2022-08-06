@@ -1,0 +1,44 @@
+.top-container{
+    margin-top: 20px;
+}
+
+.middle{
+    margin-top: 40px;
+}
+
+b{
+  color: blue;
+  font-size: larger;
+}
+
+/* body, html {
+    height: 1200px;
+    width :
+    
+  } */
+
+  .bg {
+    /* The image used */
+    
+    /* background-image: url('https://images.hdqwalls.com/download/san-francisco-oakland-bay-bridge-covered-with-fog-qg-1920x1080.jpg');  */
+  
+    /* Full height */
+   
+    /* height: 1080px;
+    width :1920px; */
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+h2{
+    color: blue;
+}
+h5{
+    color: brown;
+}
+h6{
+    color: #4e1f85;
+}

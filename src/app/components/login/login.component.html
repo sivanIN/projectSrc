@@ -1,0 +1,83 @@
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f6dd53;">
+        <div class="container-fluid">
+            <img style="height: 30px; width: auto;" src="https://cdn-icons-png.flaticon.com/512/1518/1518738.png" alt="">
+            &nbsp;
+            &nbsp;
+            <a style="font-size: 30px;" class="navbar-brand" href="#">MNSS Insurance</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Health Policies</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Home Policies</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              </li>
+
+          
+              
+            </ul>
+            
+            
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
+
+
+
+
+
+<div class="container" style="margin-top: 30px;">
+
+<div style=" box-shadow: 5px 5px 10px;" class="shadow-lg p-3 mb-5 bg-white rounded  row">
+        
+    <div class="col-6" style="float: right;">
+        <form style="width: 500px;" #loginForm="ngForm"   (ngSubmit)="userLogin(loginForm.value)">
+            <div>
+                <h1 style="color: rgb(221, 180, 12); margin-top: 10px;">Login</h1>
+                <br>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"><h4> Email address </h4></label>
+              <input style="border-radius: 25px;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" ngModel #email=ngModel>
+            </div>
+            <br>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"><h4> Password </h4></label>
+              <input style="border-radius: 25px;" type="password" class="form-control" id="exampleInputPassword1" name="password" ngModel #password=ngModel>
+            </div>
+            <br>
+            
+            <button style="margin-left: 80%; border-radius: 20px;" type="submit" class="btn btn-warning btn-lg">Submit</button>
+            <p>Not have an account? <a routerLink="/signup">Register here</a></p>
+        </form>
+    </div>
+    <div class=" col-6">
+        <img style="border-radius: 40px; box-shadow: 5px 5px 10px;" src="https://scontent.fpnq7-1.fna.fbcdn.net/v/t39.30808-6/296763673_5975677432531237_6353516199044075745_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=v58rpvK5ZKYAX8XLG5v&_nc_ht=scontent.fpnq7-1.fna&oh=00_AT852tzoxPxCqGyalcMRD5dugT13SavI6IMW7rVV6wbN8g&oe=62F30338" alt="">
+    </div>
+
+</div>
+
+</div>
+
+<!-- </div>
+</div> -->

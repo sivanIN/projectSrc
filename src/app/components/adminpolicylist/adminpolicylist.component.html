@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="card text-dark bg-light mb-3" style="margin-top: 30px; max-width: 100rem;">
+      <div class="card-header"><b>User Details</b></div>
+      <div class="card-body" >
+        <div *ngFor = "let user of users" >
+        <h5 class="card-title">Email Id: {{user.emailid}}</h5>
+        <h5 class="card-title">phonenumber: {{user.mobilenumber}}</h5>
+        <div *ngFor = "let policydetails of policydetails">
+          <p class="card-text">Policy Name: {{policydetails.policyname}}</p>
+          <p class="card-text">Policy Id:{{policydetails.policyid}}</p>
+          <p class="card-text">Policy Sum Assurance:{{policydetails.sumassurance}}</p>
+          <p class="card-text">Policy Premium:{{policydetails.premium}}</p>
+          <p class="card-text">Policy Term:{{policydetails.policyterm}}</p>
+         
+          </div>
+        </div>
+        <br>
+      
+        <br>
+        <!-- <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#modall">Approve</button>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#modall">Delete</button> -->
+
+      </div>
+    </div>
+  </div>

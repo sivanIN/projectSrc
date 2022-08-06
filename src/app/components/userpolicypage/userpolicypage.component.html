@@ -1,0 +1,21 @@
+<p>userpolicypage works!</p>
+
+<div class="container">
+    <div class="card text-dark bg-light mb-3" style="margin-top: 30px; max-width: 80rem;">
+      <div class="card-header"><b>User's Policy Details</b></div>
+      <div class="card-body">
+        <h5 class="card-title">Email Id: {{emailid}}</h5>
+        <h5 class="card-title">Phone Number: {{phonenumber}}</h5>
+        <br>
+        <p class="card-text">Policy Name: {{policy.policyname}}</p>
+        <p class="card-text">Policy Id: {{policy.policyid}}</p>
+        <p class="card-text">Policy Description: {{policy.policydescription}}</p>
+        <p class="card-text">Sumassurance: {{policy.sumassurance}}</p>
+        <p class="card-text">Policy Premium: {{policy.premium}}</p>
+        <p class="card-text">Status:</p>
+        <br>
+        <button  class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#modall">Pay Premium</button>
+
+      </div>
+    </div>
+  </div>
